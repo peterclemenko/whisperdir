@@ -5,7 +5,7 @@ import json
 
 def transcribe_all_audio_files_in_directory(directory_path):
     for file_name in os.listdir(directory_path):
-        if file_name.endswith(".mp3") or file_name.endswith(".wav") or file_name.endswith(".m4a"):
+        if file_name.endswith(".mp3") or file_name.endswith(".wav") or file_name.endswith(".m4a") or file_name.endswith(".aac"):
             file_path = os.path.join(directory_path, file_name)
             print(f"Transcribing {file_path}...")
             
